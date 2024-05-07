@@ -6,17 +6,32 @@ import pytube as pt
 from pytube import *
 
 
+
 class DownloadThread(QThread):
+    """
+    A QThread subclass for downloading videos from a YouTube playlist.
+    """
+    
     # Signals to communicate with the main thread
     video_downloaded = Signal(str)
     error_occurred = Signal(str)
 
     def __init__(self, playlist_url, output_path):
+        """
+        Initialize the DownloadThread with the playlist URL and output path.
+
+        Args:
+            playlist_url (str): The URL of the YouTube playlist.
+            output_path (str): The path where the videos will be downloaded.
+        """
         super().__init__()
         self.playlist_url = playlist_url
         self.output_path = output_path
 
     def run(self):
+        """
+        Run the thread to download videos from the YouTube playlist.
+        """
         try:
             # Create a Playlist object
             playlist = Playlist(self.playlist_url)
@@ -38,14 +53,20 @@ class DownloadThread(QThread):
 
                 except Exception as e:
                     # Emit signal to notify the error
-                    self.error_occurred.emit(f"استنى بحاول تانى  {video_url}: {str(e)}")
+                    self.error_occurred.emit(f"retry    {video_url}: {str(e)}")
 
         except Exception as e:
             # Emit signal to notify the error
             self.error_occurred.emit(str(e))
 
 class MainWindow(QMainWindow):
+    """
+    Main application window for the YouTube playlist downloader.
+    """
     def __init__(self):
+        """
+        Initialize the main window with UI components.
+        """
         super().__init__()
         self.setWindowTitle("mohamed eltayar   ")
         
@@ -55,7 +76,7 @@ class MainWindow(QMainWindow):
         self.playlist_label = QLabel(" pl url")
         self.output_input = QLineEdit()
         self.output_label = QLabel("location url")
-        self.download_button = QPushButton("حمل")
+        self.download_button = QPushButton("download")
         self.log_output = QTextEdit()
 
         layout = QVBoxLayout()
@@ -75,6 +96,9 @@ class MainWindow(QMainWindow):
         self.download_button.clicked.connect(self.start_download)
 
     def start_download(self):
+        """
+        Start the download process when the Download button is clicked.
+        """
         playlist_url = self.playlist_input.text()
         output_path = self.output_input.text()
 
@@ -91,4 +115,3 @@ if __name__ == "__main__":
     sys.exit(app.exec())
 
 
-    

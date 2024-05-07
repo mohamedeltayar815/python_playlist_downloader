@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module Playlist</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">Playlist</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cmoham%5Conedrive%5Cdesktop%5Cnew%20folder%20%284%29%5Cplaylistdownloader%5Cpython_playlist_downloader%5Cplaylist.py">c:\users\moham\onedrive\desktop\new folder (4)\playlistdownloader\python_playlist_downloader\playlist.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="PySide6.html">PySide6</a><br>
+<a href="pytube.captions.html">pytube.captions</a><br>
+<a href="pytube.cipher.html">pytube.cipher</a><br>
+<a href="pytube.contrib.html">pytube.contrib</a><br>
+<a href="pytube.exceptions.html">pytube.exceptions</a><br>
+</td><td class="multicolumn"><a href="pytube.extract.html">pytube.extract</a><br>
+<a href="pytube.helpers.html">pytube.helpers</a><br>
+<a href="pytube.innertube.html">pytube.innertube</a><br>
+<a href="pytube.itags.html">pytube.itags</a><br>
+<a href="pytube.metadata.html">pytube.metadata</a><br>
+</td><td class="multicolumn"><a href="pytube.monostate.html">pytube.monostate</a><br>
+<a href="pytube.parser.html">pytube.parser</a><br>
+<a href="pytube.html">pytube</a><br>
+<a href="pydoc.html">pydoc</a><br>
+<a href="pytube.query.html">pytube.query</a><br>
+</td><td class="multicolumn"><a href="pytube.request.html">pytube.request</a><br>
+<a href="pytube.streams.html">pytube.streams</a><br>
+<a href="sys.html">sys</a><br>
+<a href="pytube.version.html">pytube.version</a><br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="PySide6.QtCore.html#QThread">PySide6.QtCore.QThread</a>(<a href="PySide6.QtCore.html#QObject">PySide6.QtCore.QObject</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="Playlist.html#DownloadThread">DownloadThread</a>
+</dt></dl>
+</dd>
+<dt class="heading-text"><a href="PySide6.QtWidgets.html#QMainWindow">PySide6.QtWidgets.QMainWindow</a>(<a href="PySide6.QtWidgets.html#QWidget">PySide6.QtWidgets.QWidget</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="Playlist.html#MainWindow">MainWindow</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="DownloadThread">class <strong>DownloadThread</strong></a>(<a href="PySide6.QtCore.html#QThread">PySide6.QtCore.QThread</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#DownloadThread">DownloadThread</a>(playlist_url,&nbsp;output_path)<br>
+&nbsp;<br>
+A&nbsp;<a href="PySide6.QtCore.html#QThread">QThread</a>&nbsp;subclass&nbsp;for&nbsp;downloading&nbsp;videos&nbsp;from&nbsp;a&nbsp;YouTube&nbsp;playlist.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="Playlist.html#DownloadThread">DownloadThread</a></dd>
+<dd><a href="PySide6.QtCore.html#QThread">PySide6.QtCore.QThread</a></dd>
+<dd><a href="PySide6.QtCore.html#QObject">PySide6.QtCore.QObject</a></dd>
+<dd>Shiboken.Object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="DownloadThread-__init__"><strong>__init__</strong></a>(self, playlist_url, output_path)</dt><dd><span class="code">Initialize&nbsp;the&nbsp;<a href="#DownloadThread">DownloadThread</a>&nbsp;with&nbsp;the&nbsp;playlist&nbsp;URL&nbsp;and&nbsp;output&nbsp;path.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;playlist_url&nbsp;(str):&nbsp;The&nbsp;URL&nbsp;of&nbsp;the&nbsp;YouTube&nbsp;playlist.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;output_path&nbsp;(str):&nbsp;The&nbsp;path&nbsp;where&nbsp;the&nbsp;videos&nbsp;will&nbsp;be&nbsp;downloaded.</span></dd></dl>
+
+<strong>error_occurred</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="DownloadThread-run"><strong>run</strong></a>(self)</dt><dd><span class="code">Run&nbsp;the&nbsp;thread&nbsp;to&nbsp;download&nbsp;videos&nbsp;from&nbsp;the&nbsp;YouTube&nbsp;playlist.</span></dd></dl>
+
+<strong>video_downloaded</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>staticMetaObject</strong> = PySide6.QtCore.QMetaObject("DownloadThread" inhe...ure=error_occurred(QString), parameters=QString
+)</dl>
+
+<hr>
+Methods inherited from <a href="PySide6.QtCore.html#QThread">PySide6.QtCore.QThread</a>:<br>
+<dl><dt><a name="DownloadThread-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><span class="code">Implement&nbsp;delattr(self,&nbsp;name).</span></dd></dl>
+
+<dl><dt><a name="DownloadThread-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><span class="code">Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</span></dd></dl>
+
+<dl><dt><a name="DownloadThread-event"><strong>event</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-eventDispatcher"><strong>eventDispatcher</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-exec"><strong>exec</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-exec_"><strong>exec_</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-exit"><strong>exit</strong></a>(...)</dt></dl>
+
+<strong>finished</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="DownloadThread-isFinished"><strong>isFinished</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-isInterruptionRequested"><strong>isInterruptionRequested</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-isRunning"><strong>isRunning</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-loopLevel"><strong>loopLevel</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-priority"><strong>priority</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-quit"><strong>quit</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-requestInterruption"><strong>requestInterruption</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-setEventDispatcher"><strong>setEventDispatcher</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-setPriority"><strong>setPriority</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-setStackSize"><strong>setStackSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-stackSize"><strong>stackSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-start"><strong>start</strong></a>(...)</dt></dl>
+
+<strong>started</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="DownloadThread-terminate"><strong>terminate</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-wait"><strong>wait</strong></a>(...)</dt></dl>
+
+<hr>
+Static methods inherited from <a href="PySide6.QtCore.html#QThread">PySide6.QtCore.QThread</a>:<br>
+<dl><dt><a name="DownloadThread-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from Shiboken.ObjectType</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<dl><dt><a name="DownloadThread-currentThread"><strong>currentThread</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-idealThreadCount"><strong>idealThreadCount</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-msleep"><strong>msleep</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-setTerminationEnabled"><strong>setTerminationEnabled</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-sleep"><strong>sleep</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-usleep"><strong>usleep</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-yieldCurrentThread"><strong>yieldCurrentThread</strong></a>(...)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PySide6.QtCore.html#QThread">PySide6.QtCore.QThread</a>:<br>
+<dl><dt><strong>Priority</strong> = &lt;enum 'Priority'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="PySide6.QtCore.html#QObject">PySide6.QtCore.QObject</a>:<br>
+<dl><dt><a name="DownloadThread-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><span class="code">Return&nbsp;getattr(self,&nbsp;name).</span></dd></dl>
+
+<dl><dt><a name="DownloadThread-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><span class="code">Return&nbsp;repr(self).</span></dd></dl>
+
+<dl><dt><a name="DownloadThread-blockSignals"><strong>blockSignals</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-childEvent"><strong>childEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-children"><strong>children</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-connectNotify"><strong>connectNotify</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-customEvent"><strong>customEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-deleteLater"><strong>deleteLater</strong></a>(...)</dt></dl>
+
+<strong>destroyed</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="DownloadThread-disconnectNotify"><strong>disconnectNotify</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-dumpObjectInfo"><strong>dumpObjectInfo</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-dumpObjectTree"><strong>dumpObjectTree</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-dynamicPropertyNames"><strong>dynamicPropertyNames</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-emit"><strong>emit</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-eventFilter"><strong>eventFilter</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-findChild"><strong>findChild</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-findChildren"><strong>findChildren</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-inherits"><strong>inherits</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-installEventFilter"><strong>installEventFilter</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-isQuickItemType"><strong>isQuickItemType</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-isSignalConnected"><strong>isSignalConnected</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-isWidgetType"><strong>isWidgetType</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-isWindowType"><strong>isWindowType</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-killTimer"><strong>killTimer</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-metaObject"><strong>metaObject</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-moveToThread"><strong>moveToThread</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-objectName"><strong>objectName</strong></a>(...)</dt></dl>
+
+<strong>objectNameChanged</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="DownloadThread-parent"><strong>parent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-property"><strong>property</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-receivers"><strong>receivers</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-removeEventFilter"><strong>removeEventFilter</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-sender"><strong>sender</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-senderSignalIndex"><strong>senderSignalIndex</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-setObjectName"><strong>setObjectName</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-setParent"><strong>setParent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-setProperty"><strong>setProperty</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-signalsBlocked"><strong>signalsBlocked</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-startTimer"><strong>startTimer</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-thread"><strong>thread</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-timerEvent"><strong>timerEvent</strong></a>(...)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="PySide6.QtCore.html#QObject">PySide6.QtCore.QObject</a>:<br>
+<dl><dt><a name="DownloadThread-tr"><strong>tr</strong></a>(...)<span class="grey"><span class="heading-text"> from Shiboken.ObjectType</span></span></dt></dl>
+
+<hr>
+Static methods inherited from <a href="PySide6.QtCore.html#QObject">PySide6.QtCore.QObject</a>:<br>
+<dl><dt><a name="DownloadThread-connect"><strong>connect</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="DownloadThread-disconnect"><strong>disconnect</strong></a>(...)</dt></dl>
+
+<hr>
+Data descriptors inherited from Shiboken.Object:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="MainWindow">class <strong>MainWindow</strong></a>(<a href="PySide6.QtWidgets.html#QMainWindow">PySide6.QtWidgets.QMainWindow</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Main&nbsp;application&nbsp;window&nbsp;for&nbsp;the&nbsp;YouTube&nbsp;playlist&nbsp;downloader.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="Playlist.html#MainWindow">MainWindow</a></dd>
+<dd><a href="PySide6.QtWidgets.html#QMainWindow">PySide6.QtWidgets.QMainWindow</a></dd>
+<dd><a href="PySide6.QtWidgets.html#QWidget">PySide6.QtWidgets.QWidget</a></dd>
+<dd><a href="PySide6.QtCore.html#QObject">PySide6.QtCore.QObject</a></dd>
+<dd><a href="PySide6.QtGui.html#QPaintDevice">PySide6.QtGui.QPaintDevice</a></dd>
+<dd>Shiboken.Object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MainWindow-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Initialize&nbsp;the&nbsp;main&nbsp;window&nbsp;with&nbsp;UI&nbsp;components.</span></dd></dl>
+
+<dl><dt><a name="MainWindow-start_download"><strong>start_download</strong></a>(self)</dt><dd><span class="code">Start&nbsp;the&nbsp;download&nbsp;process&nbsp;when&nbsp;the&nbsp;Download&nbsp;button&nbsp;is&nbsp;clicked.</span></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>staticMetaObject</strong> = PySide6.QtCore.QMetaObject("MainWindow" inherits "QMainWindow":
+)</dl>
+
+<hr>
+Methods inherited from <a href="PySide6.QtWidgets.html#QMainWindow">PySide6.QtWidgets.QMainWindow</a>:<br>
+<dl><dt><a name="MainWindow-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><span class="code">Implement&nbsp;delattr(self,&nbsp;name).</span></dd></dl>
+
+<dl><dt><a name="MainWindow-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><span class="code">Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</span></dd></dl>
+
+<dl><dt><a name="MainWindow-addDockWidget"><strong>addDockWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-addToolBar"><strong>addToolBar</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-addToolBarBreak"><strong>addToolBarBreak</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-centralWidget"><strong>centralWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-contextMenuEvent"><strong>contextMenuEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-corner"><strong>corner</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-createPopupMenu"><strong>createPopupMenu</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-dockOptions"><strong>dockOptions</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-dockWidgetArea"><strong>dockWidgetArea</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-documentMode"><strong>documentMode</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-event"><strong>event</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-iconSize"><strong>iconSize</strong></a>(...)</dt></dl>
+
+<strong>iconSizeChanged</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="MainWindow-insertToolBar"><strong>insertToolBar</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-insertToolBarBreak"><strong>insertToolBarBreak</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isAnimated"><strong>isAnimated</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isDockNestingEnabled"><strong>isDockNestingEnabled</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isSeparator"><strong>isSeparator</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-menuBar"><strong>menuBar</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-menuWidget"><strong>menuWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-removeDockWidget"><strong>removeDockWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-removeToolBar"><strong>removeToolBar</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-removeToolBarBreak"><strong>removeToolBarBreak</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-resizeDocks"><strong>resizeDocks</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-restoreDockWidget"><strong>restoreDockWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-restoreState"><strong>restoreState</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-saveState"><strong>saveState</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setAnimated"><strong>setAnimated</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setCentralWidget"><strong>setCentralWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setCorner"><strong>setCorner</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setDockNestingEnabled"><strong>setDockNestingEnabled</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setDockOptions"><strong>setDockOptions</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setDocumentMode"><strong>setDocumentMode</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setIconSize"><strong>setIconSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setMenuBar"><strong>setMenuBar</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setMenuWidget"><strong>setMenuWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setStatusBar"><strong>setStatusBar</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setTabPosition"><strong>setTabPosition</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setTabShape"><strong>setTabShape</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setToolButtonStyle"><strong>setToolButtonStyle</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setUnifiedTitleAndToolBarOnMac"><strong>setUnifiedTitleAndToolBarOnMac</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-splitDockWidget"><strong>splitDockWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-statusBar"><strong>statusBar</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-tabPosition"><strong>tabPosition</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-tabShape"><strong>tabShape</strong></a>(...)</dt></dl>
+
+<strong>tabifiedDockWidgetActivated</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="MainWindow-tabifiedDockWidgets"><strong>tabifiedDockWidgets</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-tabifyDockWidget"><strong>tabifyDockWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-takeCentralWidget"><strong>takeCentralWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-toolBarArea"><strong>toolBarArea</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-toolBarBreak"><strong>toolBarBreak</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-toolButtonStyle"><strong>toolButtonStyle</strong></a>(...)</dt></dl>
+
+<strong>toolButtonStyleChanged</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="MainWindow-unifiedTitleAndToolBarOnMac"><strong>unifiedTitleAndToolBarOnMac</strong></a>(...)</dt></dl>
+
+<hr>
+Static methods inherited from <a href="PySide6.QtWidgets.html#QMainWindow">PySide6.QtWidgets.QMainWindow</a>:<br>
+<dl><dt><a name="MainWindow-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from Shiboken.ObjectType</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PySide6.QtWidgets.html#QMainWindow">PySide6.QtWidgets.QMainWindow</a>:<br>
+<dl><dt><strong>DockOption</strong> = &lt;flag 'DockOption'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="PySide6.QtWidgets.html#QWidget">PySide6.QtWidgets.QWidget</a>:<br>
+<dl><dt><a name="MainWindow-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><span class="code">Return&nbsp;repr(self).</span></dd></dl>
+
+<dl><dt><a name="MainWindow-acceptDrops"><strong>acceptDrops</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-accessibleDescription"><strong>accessibleDescription</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-accessibleName"><strong>accessibleName</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-actionEvent"><strong>actionEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-actions"><strong>actions</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-activateWindow"><strong>activateWindow</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-addAction"><strong>addAction</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-addActions"><strong>addActions</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-adjustSize"><strong>adjustSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-autoFillBackground"><strong>autoFillBackground</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-backgroundRole"><strong>backgroundRole</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-backingStore"><strong>backingStore</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-baseSize"><strong>baseSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-changeEvent"><strong>changeEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-childAt"><strong>childAt</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-childrenRect"><strong>childrenRect</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-childrenRegion"><strong>childrenRegion</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-clearFocus"><strong>clearFocus</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-clearMask"><strong>clearMask</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-close"><strong>close</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-closeEvent"><strong>closeEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-contentsMargins"><strong>contentsMargins</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-contentsRect"><strong>contentsRect</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-contextMenuPolicy"><strong>contextMenuPolicy</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-create"><strong>create</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-createWinId"><strong>createWinId</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-cursor"><strong>cursor</strong></a>(...)</dt></dl>
+
+<strong>customContextMenuRequested</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="MainWindow-destroy"><strong>destroy</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-devType"><strong>devType</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-dragEnterEvent"><strong>dragEnterEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-dragLeaveEvent"><strong>dragLeaveEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-dragMoveEvent"><strong>dragMoveEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-dropEvent"><strong>dropEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-effectiveWinId"><strong>effectiveWinId</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-ensurePolished"><strong>ensurePolished</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-enterEvent"><strong>enterEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-focusInEvent"><strong>focusInEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-focusNextChild"><strong>focusNextChild</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-focusNextPrevChild"><strong>focusNextPrevChild</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-focusOutEvent"><strong>focusOutEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-focusPolicy"><strong>focusPolicy</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-focusPreviousChild"><strong>focusPreviousChild</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-focusProxy"><strong>focusProxy</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-focusWidget"><strong>focusWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-font"><strong>font</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-fontInfo"><strong>fontInfo</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-fontMetrics"><strong>fontMetrics</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-foregroundRole"><strong>foregroundRole</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-frameGeometry"><strong>frameGeometry</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-frameSize"><strong>frameSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-geometry"><strong>geometry</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-grab"><strong>grab</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-grabGesture"><strong>grabGesture</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-grabKeyboard"><strong>grabKeyboard</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-grabMouse"><strong>grabMouse</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-grabShortcut"><strong>grabShortcut</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-graphicsEffect"><strong>graphicsEffect</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-graphicsProxyWidget"><strong>graphicsProxyWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-hasFocus"><strong>hasFocus</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-hasHeightForWidth"><strong>hasHeightForWidth</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-hasMouseTracking"><strong>hasMouseTracking</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-hasTabletTracking"><strong>hasTabletTracking</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-height"><strong>height</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-heightForWidth"><strong>heightForWidth</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-hide"><strong>hide</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-hideEvent"><strong>hideEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-initPainter"><strong>initPainter</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-inputMethodEvent"><strong>inputMethodEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-inputMethodHints"><strong>inputMethodHints</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-inputMethodQuery"><strong>inputMethodQuery</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-insertAction"><strong>insertAction</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-insertActions"><strong>insertActions</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-internalWinId"><strong>internalWinId</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isActiveWindow"><strong>isActiveWindow</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isAncestorOf"><strong>isAncestorOf</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isEnabled"><strong>isEnabled</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isEnabledTo"><strong>isEnabledTo</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isFullScreen"><strong>isFullScreen</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isHidden"><strong>isHidden</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isLeftToRight"><strong>isLeftToRight</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isMaximized"><strong>isMaximized</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isMinimized"><strong>isMinimized</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isModal"><strong>isModal</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isRightToLeft"><strong>isRightToLeft</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isTopLevel"><strong>isTopLevel</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isVisible"><strong>isVisible</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isVisibleTo"><strong>isVisibleTo</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isWindow"><strong>isWindow</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isWindowModified"><strong>isWindowModified</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-keyPressEvent"><strong>keyPressEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-keyReleaseEvent"><strong>keyReleaseEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-layout"><strong>layout</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-layoutDirection"><strong>layoutDirection</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-leaveEvent"><strong>leaveEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-locale"><strong>locale</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-lower"><strong>lower</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mapFrom"><strong>mapFrom</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mapFromGlobal"><strong>mapFromGlobal</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mapFromParent"><strong>mapFromParent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mapTo"><strong>mapTo</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mapToGlobal"><strong>mapToGlobal</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mapToParent"><strong>mapToParent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mask"><strong>mask</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-maximumHeight"><strong>maximumHeight</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-maximumSize"><strong>maximumSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-maximumWidth"><strong>maximumWidth</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-metric"><strong>metric</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-minimumHeight"><strong>minimumHeight</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-minimumSize"><strong>minimumSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-minimumSizeHint"><strong>minimumSizeHint</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-minimumWidth"><strong>minimumWidth</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mouseDoubleClickEvent"><strong>mouseDoubleClickEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mouseMoveEvent"><strong>mouseMoveEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mousePressEvent"><strong>mousePressEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mouseReleaseEvent"><strong>mouseReleaseEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-move"><strong>move</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-moveEvent"><strong>moveEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-nativeEvent"><strong>nativeEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-nativeParentWidget"><strong>nativeParentWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-nextInFocusChain"><strong>nextInFocusChain</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-normalGeometry"><strong>normalGeometry</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-overrideWindowFlags"><strong>overrideWindowFlags</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-overrideWindowState"><strong>overrideWindowState</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-paintEngine"><strong>paintEngine</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-paintEvent"><strong>paintEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-palette"><strong>palette</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-parentWidget"><strong>parentWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-pos"><strong>pos</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-previousInFocusChain"><strong>previousInFocusChain</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-raise_"><strong>raise_</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-rect"><strong>rect</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-redirected"><strong>redirected</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-releaseKeyboard"><strong>releaseKeyboard</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-releaseMouse"><strong>releaseMouse</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-releaseShortcut"><strong>releaseShortcut</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-removeAction"><strong>removeAction</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-render"><strong>render</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-repaint"><strong>repaint</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-resize"><strong>resize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-resizeEvent"><strong>resizeEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-restoreGeometry"><strong>restoreGeometry</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-saveGeometry"><strong>saveGeometry</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-screen"><strong>screen</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-scroll"><strong>scroll</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setAcceptDrops"><strong>setAcceptDrops</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setAccessibleDescription"><strong>setAccessibleDescription</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setAccessibleName"><strong>setAccessibleName</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setAttribute"><strong>setAttribute</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setAutoFillBackground"><strong>setAutoFillBackground</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setBackgroundRole"><strong>setBackgroundRole</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setBaseSize"><strong>setBaseSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setContentsMargins"><strong>setContentsMargins</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setContextMenuPolicy"><strong>setContextMenuPolicy</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setCursor"><strong>setCursor</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setDisabled"><strong>setDisabled</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setEnabled"><strong>setEnabled</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setFixedHeight"><strong>setFixedHeight</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setFixedSize"><strong>setFixedSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setFixedWidth"><strong>setFixedWidth</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setFocus"><strong>setFocus</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setFocusPolicy"><strong>setFocusPolicy</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setFocusProxy"><strong>setFocusProxy</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setFont"><strong>setFont</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setForegroundRole"><strong>setForegroundRole</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setGeometry"><strong>setGeometry</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setGraphicsEffect"><strong>setGraphicsEffect</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setHidden"><strong>setHidden</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setInputMethodHints"><strong>setInputMethodHints</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setLayout"><strong>setLayout</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setLayoutDirection"><strong>setLayoutDirection</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setLocale"><strong>setLocale</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setMask"><strong>setMask</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setMaximumHeight"><strong>setMaximumHeight</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setMaximumSize"><strong>setMaximumSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setMaximumWidth"><strong>setMaximumWidth</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setMinimumHeight"><strong>setMinimumHeight</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setMinimumSize"><strong>setMinimumSize</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setMinimumWidth"><strong>setMinimumWidth</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setMouseTracking"><strong>setMouseTracking</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setPalette"><strong>setPalette</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setParent"><strong>setParent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setScreen"><strong>setScreen</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setShortcutAutoRepeat"><strong>setShortcutAutoRepeat</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setShortcutEnabled"><strong>setShortcutEnabled</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setSizeIncrement"><strong>setSizeIncrement</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setSizePolicy"><strong>setSizePolicy</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setStatusTip"><strong>setStatusTip</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setStyle"><strong>setStyle</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setStyleSheet"><strong>setStyleSheet</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setTabletTracking"><strong>setTabletTracking</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setToolTip"><strong>setToolTip</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setToolTipDuration"><strong>setToolTipDuration</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setUpdatesEnabled"><strong>setUpdatesEnabled</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setVisible"><strong>setVisible</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWhatsThis"><strong>setWhatsThis</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWindowFilePath"><strong>setWindowFilePath</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWindowFlag"><strong>setWindowFlag</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWindowFlags"><strong>setWindowFlags</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWindowIcon"><strong>setWindowIcon</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWindowIconText"><strong>setWindowIconText</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWindowModality"><strong>setWindowModality</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWindowModified"><strong>setWindowModified</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWindowOpacity"><strong>setWindowOpacity</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWindowRole"><strong>setWindowRole</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWindowState"><strong>setWindowState</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setWindowTitle"><strong>setWindowTitle</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-sharedPainter"><strong>sharedPainter</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-show"><strong>show</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-showEvent"><strong>showEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-showFullScreen"><strong>showFullScreen</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-showMaximized"><strong>showMaximized</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-showMinimized"><strong>showMinimized</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-showNormal"><strong>showNormal</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-size"><strong>size</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-sizeHint"><strong>sizeHint</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-sizeIncrement"><strong>sizeIncrement</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-sizePolicy"><strong>sizePolicy</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-stackUnder"><strong>stackUnder</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-statusTip"><strong>statusTip</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-style"><strong>style</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-styleSheet"><strong>styleSheet</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-tabletEvent"><strong>tabletEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-testAttribute"><strong>testAttribute</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-toolTip"><strong>toolTip</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-toolTipDuration"><strong>toolTipDuration</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-topLevelWidget"><strong>topLevelWidget</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-underMouse"><strong>underMouse</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-ungrabGesture"><strong>ungrabGesture</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-unsetCursor"><strong>unsetCursor</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-unsetLayoutDirection"><strong>unsetLayoutDirection</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-unsetLocale"><strong>unsetLocale</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-update"><strong>update</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-updateGeometry"><strong>updateGeometry</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-updateMicroFocus"><strong>updateMicroFocus</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-updatesEnabled"><strong>updatesEnabled</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-visibleRegion"><strong>visibleRegion</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-whatsThis"><strong>whatsThis</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-wheelEvent"><strong>wheelEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-width"><strong>width</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-winId"><strong>winId</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-window"><strong>window</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-windowFilePath"><strong>windowFilePath</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-windowFlags"><strong>windowFlags</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-windowHandle"><strong>windowHandle</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-windowIcon"><strong>windowIcon</strong></a>(...)</dt></dl>
+
+<strong>windowIconChanged</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="MainWindow-windowIconText"><strong>windowIconText</strong></a>(...)</dt></dl>
+
+<strong>windowIconTextChanged</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="MainWindow-windowModality"><strong>windowModality</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-windowOpacity"><strong>windowOpacity</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-windowRole"><strong>windowRole</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-windowState"><strong>windowState</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-windowTitle"><strong>windowTitle</strong></a>(...)</dt></dl>
+
+<strong>windowTitleChanged</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="MainWindow-windowType"><strong>windowType</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-x"><strong>x</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-y"><strong>y</strong></a>(...)</dt></dl>
+
+<hr>
+Static methods inherited from <a href="PySide6.QtWidgets.html#QWidget">PySide6.QtWidgets.QWidget</a>:<br>
+<dl><dt><a name="MainWindow-createWindowContainer"><strong>createWindowContainer</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-find"><strong>find</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-keyboardGrabber"><strong>keyboardGrabber</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-mouseGrabber"><strong>mouseGrabber</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setTabOrder"><strong>setTabOrder</strong></a>(...)</dt></dl>
+
+<hr>
+Data and other attributes inherited from <a href="PySide6.QtWidgets.html#QWidget">PySide6.QtWidgets.QWidget</a>:<br>
+<dl><dt><strong>RenderFlag</strong> = &lt;flag 'RenderFlag'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="PySide6.QtCore.html#QObject">PySide6.QtCore.QObject</a>:<br>
+<dl><dt><a name="MainWindow-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><span class="code">Return&nbsp;getattr(self,&nbsp;name).</span></dd></dl>
+
+<dl><dt><a name="MainWindow-blockSignals"><strong>blockSignals</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-childEvent"><strong>childEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-children"><strong>children</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-connectNotify"><strong>connectNotify</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-customEvent"><strong>customEvent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-deleteLater"><strong>deleteLater</strong></a>(...)</dt></dl>
+
+<strong>destroyed</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="MainWindow-disconnectNotify"><strong>disconnectNotify</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-dumpObjectInfo"><strong>dumpObjectInfo</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-dumpObjectTree"><strong>dumpObjectTree</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-dynamicPropertyNames"><strong>dynamicPropertyNames</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-emit"><strong>emit</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-eventFilter"><strong>eventFilter</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-findChild"><strong>findChild</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-findChildren"><strong>findChildren</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-inherits"><strong>inherits</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-installEventFilter"><strong>installEventFilter</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isQuickItemType"><strong>isQuickItemType</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isSignalConnected"><strong>isSignalConnected</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isWidgetType"><strong>isWidgetType</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-isWindowType"><strong>isWindowType</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-killTimer"><strong>killTimer</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-metaObject"><strong>metaObject</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-moveToThread"><strong>moveToThread</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-objectName"><strong>objectName</strong></a>(...)</dt></dl>
+
+<strong>objectNameChanged</strong> = &lt;PySide6.QtCore.Signal object&gt;
+<dl><dt><a name="MainWindow-parent"><strong>parent</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-property"><strong>property</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-receivers"><strong>receivers</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-removeEventFilter"><strong>removeEventFilter</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-sender"><strong>sender</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-senderSignalIndex"><strong>senderSignalIndex</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setObjectName"><strong>setObjectName</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-setProperty"><strong>setProperty</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-signalsBlocked"><strong>signalsBlocked</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-startTimer"><strong>startTimer</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-thread"><strong>thread</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-timerEvent"><strong>timerEvent</strong></a>(...)</dt></dl>
+
+<hr>
+Class methods inherited from <a href="PySide6.QtCore.html#QObject">PySide6.QtCore.QObject</a>:<br>
+<dl><dt><a name="MainWindow-tr"><strong>tr</strong></a>(...)<span class="grey"><span class="heading-text"> from Shiboken.ObjectType</span></span></dt></dl>
+
+<hr>
+Static methods inherited from <a href="PySide6.QtCore.html#QObject">PySide6.QtCore.QObject</a>:<br>
+<dl><dt><a name="MainWindow-connect"><strong>connect</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-disconnect"><strong>disconnect</strong></a>(...)</dt></dl>
+
+<hr>
+Methods inherited from <a href="PySide6.QtGui.html#QPaintDevice">PySide6.QtGui.QPaintDevice</a>:<br>
+<dl><dt><a name="MainWindow-colorCount"><strong>colorCount</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-depth"><strong>depth</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-devicePixelRatio"><strong>devicePixelRatio</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-devicePixelRatioF"><strong>devicePixelRatioF</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-heightMM"><strong>heightMM</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-logicalDpiX"><strong>logicalDpiX</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-logicalDpiY"><strong>logicalDpiY</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-paintingActive"><strong>paintingActive</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-physicalDpiX"><strong>physicalDpiX</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-physicalDpiY"><strong>physicalDpiY</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="MainWindow-widthMM"><strong>widthMM</strong></a>(...)</dt></dl>
+
+<hr>
+Static methods inherited from <a href="PySide6.QtGui.html#QPaintDevice">PySide6.QtGui.QPaintDevice</a>:<br>
+<dl><dt><a name="MainWindow-devicePixelRatioFScale"><strong>devicePixelRatioFScale</strong></a>(...)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="PySide6.QtGui.html#QPaintDevice">PySide6.QtGui.QPaintDevice</a>:<br>
+<dl><dt><strong>painters</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="PySide6.QtGui.html#QPaintDevice">PySide6.QtGui.QPaintDevice</a>:<br>
+<dl><dt><strong>PaintDeviceMetric</strong> = &lt;enum 'PaintDeviceMetric'&gt;</dl>
+
+<hr>
+Data descriptors inherited from Shiboken.Object:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-QEnum"><strong>QEnum</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-QFlag"><strong>QFlag</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-QT_TRANSLATE_NOOP"><strong>QT_TRANSLATE_NOOP</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-QT_TRANSLATE_NOOP3"><strong>QT_TRANSLATE_NOOP3</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-QT_TRANSLATE_NOOP_UTF8"><strong>QT_TRANSLATE_NOOP_UTF8</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-QT_TR_NOOP"><strong>QT_TR_NOOP</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-QT_TR_NOOP_UTF8"><strong>QT_TR_NOOP_UTF8</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-Q_ARG"><strong>Q_ARG</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-Q_RETURN_ARG"><strong>Q_RETURN_ARG</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-SIGNAL"><strong>SIGNAL</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-SLOT"><strong>SLOT</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qAbs"><strong>qAbs</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qAddPostRoutine"><strong>qAddPostRoutine</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qCCritical"><strong>qCCritical</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qCDebug"><strong>qCDebug</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qCInfo"><strong>qCInfo</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qCWarning"><strong>qCWarning</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qCompress"><strong>qCompress</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qCritical"><strong>qCritical</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qDebug"><strong>qDebug</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qDrawPlainRect"><strong>qDrawPlainRect</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qDrawShadeLine"><strong>qDrawShadeLine</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qDrawShadePanel"><strong>qDrawShadePanel</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qDrawShadeRect"><strong>qDrawShadeRect</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qDrawWinButton"><strong>qDrawWinButton</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qDrawWinPanel"><strong>qDrawWinPanel</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qFastCos"><strong>qFastCos</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qFastSin"><strong>qFastSin</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qFatal"><strong>qFatal</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qFormatLogMessage"><strong>qFormatLogMessage</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qFuzzyCompare"><strong>qFuzzyCompare</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qFuzzyIsNull"><strong>qFuzzyIsNull</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qInstallMessageHandler"><strong>qInstallMessageHandler</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qIsFinite"><strong>qIsFinite</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qIsInf"><strong>qIsInf</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qIsNaN"><strong>qIsNaN</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qIsNull"><strong>qIsNull</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qRegisterResourceData"><strong>qRegisterResourceData</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qSetMessagePattern"><strong>qSetMessagePattern</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qUncompress"><strong>qUncompress</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qUnregisterResourceData"><strong>qUnregisterResourceData</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qVersion"><strong>qVersion</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qWarning"><strong>qWarning</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-qtTrId"><strong>qtTrId</strong></a>(...)</dt></dl>
+</td></tr></table>
+</body></html>

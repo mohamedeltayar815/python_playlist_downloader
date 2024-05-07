@@ -7,8 +7,11 @@
 
 ## 1.**Imports:**
 **sys**: For system-level operations.
+
 **PySide6**: Importing PySide6 library.
+
 **QThread**, **QMainWindow**, **QLineEdit**, **QLabel**, **QPushButton**, **QTextEdit**, **QVBoxLayout**, **QHBoxLayout**, **QWidget**: These are various classes from PySide6 for creating GUI elements.
+
 **pytube**: Importing the pytube library for YouTube video operations.
 
 ---

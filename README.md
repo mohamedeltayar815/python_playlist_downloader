@@ -1,7 +1,7 @@
 # python_playlist_downloader
 ## playlist downloader using **python** ,**PySide6** ,**pytube**
 
-###This code is a simple GUI application for downloading videos from YouTube playlists using PySide6 (a Python binding for the Qt framework) and the Pytube library, which provides an interface for downloading YouTube videos.
+### This code is a simple GUI application for downloading videos from YouTube playlists using PySide6 (a Python binding for the Qt framework) and the Pytube library, which provides an interface for downloading YouTube videos.
 
 ---
 

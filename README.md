@@ -5,7 +5,7 @@
 
 ---
 
-1.## **Imports:**
+## 1.**Imports:**
 **sys**: For system-level operations.
 **PySide6**: Importing PySide6 library.
 **QThread**, **QMainWindow**, **QLineEdit**, **QLabel**, **QPushButton**, **QTextEdit**, **QVBoxLayout**, **QHBoxLayout**, **QWidget**: These are various classes from PySide6 for creating GUI elements.
@@ -13,13 +13,13 @@
 
 ---
 
-2.## **DownloadThread Class:**
+##  2.**DownloadThread Class:**
 
 This class is a subclass of QThread and is responsible for downloading videos in a separate thread.
 It has two signals video_downloaded and error_occurred to communicate with the main thread.
 The run method is overridden to implement the actual downloading logic. It iterates over the video URLs in the provided playlist URL, downloads each video, and emits signals accordingly.
 ---
-3.## **MainWindow Class:**
+## 3.**MainWindow Class:**
 
 This class represents the main application window.
 It inherits from QMainWindow.
